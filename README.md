@@ -1,2 +1,5 @@
-# guessTheNumberDemo
-Simple Guess the Number Game for use in GitHub Workshops
+# python-demo-games
+Simple python games for use in GitHub Workshops
+
+- Guess the Number
+- Snake
