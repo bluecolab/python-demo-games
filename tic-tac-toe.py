@@ -21,10 +21,12 @@ def has_won(player):
 		(2, 5, 8),
 		(0, 4, 8),
 	]
+	# return true if a winning line has all x's or all o's
 	return any(all(board[index] == player for index in line) for line in winning_lines)
 
 
 def play_game():
+	print(f"Square labels reference:\n 1 | 2 | 3 \n---+---+---\n 4 | 5 | 6 \n---+---+---\n 7 | 8 | 9 ")
 	player = "X"
 
 	for turn in range(9):
@@ -53,5 +55,6 @@ def play_game():
 	print("It's a tie!")
 
 
-print("Tic-Tac-Toe")
-play_game()
+if __name__ == "__main__":  
+    print("Tic-Tac-Toe")  
+    play_game()  
