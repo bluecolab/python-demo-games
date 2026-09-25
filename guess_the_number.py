@@ -8,7 +8,7 @@ def guess_the_number():
     print("I'm thinking of a number between 1 and 100.")
     print("You have 7 guesses to find the number.")
 
-    while True:
+    while attempts < 7:
         try:
             guess = int(input("Take a guess: "))
             attempts += 1
@@ -19,8 +19,11 @@ def guess_the_number():
                 print("Too hi! Try again.")
             else:
                 print(f"Congratulations! You guessed the number in {attempts} attempts.")
+                break
         except ValueError:
             print("Please enter a valid number.")
+    else:
+        print(f"You're out of guesses !! The number was {number}.")
 
 if __name__ == "__main__":
     guess_the_number()
