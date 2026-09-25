@@ -14,11 +14,12 @@ def guess_the_number():
             attempts += 1
 
             if guess < number:
-                print("Too lo! Try again.")
+                print("Too low! Try again.")
             elif guess > number:
-                print("Too hi! Try again.")
+                print("Too high! Try again.")
             else:
                 print(f"Congratulations! You guessed the number in {attempts} attempts.")
+                break;
         except ValueError:
             print("Please enter a valid number.")
 
